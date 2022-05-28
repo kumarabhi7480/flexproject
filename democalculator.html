@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #univ-cal {
+            border: 1px solid rgb(217, 233, 217);
+            height: 450px;
+            width: 25%;
+            margin: auto;
+            border-radius: 10px;
+            margin-top: 100px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        #container1 {
+            /* border: 1px solid red; */
+            width: 75%;
+            height: 70px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: -6px;
+
+        }
+
+        #container2,#container3,#container3,#container4 {
+            /* border: 1px solid blue; */
+            width: 75%;
+            height: 50px;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        #container1 > button{ 
+            /*.top-button */
+
+            width: 100%;
+            height: 80%;
+            margin-bottom: 70px;
+            /* border: 1px solid green;  */
+            margin: auto;
+            text-align: center;
+            border-radius: 10px;
+            background-color: transparent;
+            font-weight: 1000;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border:none;
+        } 
+        .button {
+            width: 55px;
+            height: 90%;
+            /* border: 1px solid green; */
+            margin: auto;
+
+            text-align: center;
+            border-radius: 10px;
+            background-color: transparent;
+            font-weight: 700;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border:none;
+
+        }
+        #container2 > button:last-child{
+            color:white;
+            background-color: black;
+        }
+        #container3 > button:last-child{
+            color:white;
+            background-color: black;
+        }
+        #container4 > button:nth-child(3){
+            color:white;
+            background-color: black;
+        }
+        #container4 > button:nth-child(4){
+            color:white;
+            background-color: black;
+        }
+        #container4 > button:first-child{
+            color:white;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="univ-cal">
+
+        <div id="container1">
+            <button class="top-button">
+            </button>
+        </div>
+
+
+        <div id="container2">
+            <!-- <div class="row"> -->
+            <!-- <div class="button">1</div> -->
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">+</button>
+
+            <!-- </div> -->
+        </div>
+
+        <div id="container3">
+            <!-- <div class="row"> -->
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">-</button>
+            <!-- </div> -->
+        </div>
+
+        <div id="container3">
+            <!-- <div class="row"> -->
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">*</button>
+            <!-- </div> -->
+        </div>
+
+        <div id="container4">
+            <!-- <div class="row"> -->
+            <button class="button">C</button>
+            <button class="button">0</button>
+            <button class="button">=</button>
+            <button class="button">/</button>
+            <!-- </div> -->
+        </div>
+
+    </div>
+
+</body>
+
+</html> 

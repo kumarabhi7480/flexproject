@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin: auto;
+            width: 23%;
+        }
+
+        #container {
+            width: 75%;
+            margin: auto;
+            margin-top: 50px;
+     
+            height: 300px;
+            display: flex;
+            justify-content:space-evenly;
+            background-color: #f6ebe6;
+            border-radius: 25px;
+        }
+        #container>div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+         
+            border-radius: 20px;
+            width: 12%;
+            height: 130px;
+            margin: auto;
+        }
+        #container >div >p:first-child{
+            font-size: 20px;
+            background-color: #f6ebe6;
+            padding: 10px 15px;
+            border-radius: 8px;
+
+        }
+        #container > div >p+p{
+            margin: auto;
+            text-align: center;
+            width: 85%;
+            margin-bottom: 10px;
+            font-size: 17px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ready to realize your carrer potential ?</h1>
+    <div id="container">
+        <div>
+            <p>1</p>
+            <p>Apply for program</p>
+        </div>
+        <div>
+            <p>2</p>
+            <p>Crack the admission test</p>
+        </div>
+        <div>
+
+            <p>3</p>
+            <p>Learn At 0 Up Front Fee</p>
+        </div>
+
+        <div>
+            <p>4</p>
+            <p>Get Placed</p>
+        </div>
+        <div>
+            <p>5</p>
+            <p>Pay when you Earn 5 LPA CTC </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
