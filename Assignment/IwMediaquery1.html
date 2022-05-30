@@ -16,9 +16,9 @@
 #middle{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 300px;
-    gap: 2px;
-    margin-top: 20px;
+    grid-template-rows: 310px;
+    gap: 25px;
+    margin-top: 25px;
 }
 #middle>div:nth-child(1){
     background-color: blue;
@@ -33,12 +33,19 @@
     background-color: rgb(166, 255, 0);
 }
 
-@media screen and (min-width:400px) and (max-width: 992px){
+@media all and (min-width:470px) and (max-width: 730px){
   #middle{
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,300px);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,310px);
   }
 }
+@media all and (min-width:310px) and (max-width: 469px){
+  #middle{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,310px);
+  }
+}
+
 
     </style>
 </head>
@@ -47,10 +54,10 @@
     <div id="navbar">Navbar</div>
 
     <div id="middle">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
     </div>
 </body>
 
